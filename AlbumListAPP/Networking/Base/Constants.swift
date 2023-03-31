@@ -19,5 +19,5 @@ enum ErrorMessages: String,Error{
 }
 
 enum URLs:String {
-    case baseURL = "https://api.unsplash.com/photos?client_id="
+    case baseURL = "https://api.unsplash.com/photos"
 }

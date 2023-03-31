@@ -33,7 +33,6 @@
 		02948DF429CFC76D00F82F28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		02948DF629CFC76E00F82F28 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		02948DF929CFC76E00F82F28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		02948DFB29CFC76E00F82F28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52EBB44129D651010077A682 /* AlbumModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumModel.swift; sourceTree = "<group>"; };
 		52EBB44529D71E380077A682 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		52EBB44629D71E380077A682 /* TargetType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TargetType.swift; sourceTree = "<group>"; };
@@ -46,6 +45,7 @@
 		52EBB45929D7244A0077A682 /* AlbumListAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumListAPI.swift; sourceTree = "<group>"; };
 		52EBB45D29D7253D0077A682 /* MVVMObservable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMObservable.swift; sourceTree = "<group>"; };
 		52EBB45F29D725530077A682 /* AlbumListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumListViewModel.swift; sourceTree = "<group>"; };
+		52EBB46629D72CE90077A682 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,10 +83,10 @@
 				52EBB45229D720130077A682 /* Extensions */,
 				52EBB44329D71E380077A682 /* Networking */,
 				52EBB43F29D650CA0077A682 /* Album List */,
+				52EBB46629D72CE90077A682 /* Info.plist */,
 				02948DF329CFC76D00F82F28 /* Main.storyboard */,
 				02948DF629CFC76E00F82F28 /* Assets.xcassets */,
 				02948DF829CFC76E00F82F28 /* LaunchScreen.storyboard */,
-				02948DFB29CFC76E00F82F28 /* Info.plist */,
 			);
 			path = AlbumListAPP;
 			sourceTree = "<group>";
@@ -405,7 +405,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = JUUZV79G5F;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Starter Project/Info.plist";
+				INFOPLIST_FILE = AlbumListAPP/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -433,7 +433,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = JUUZV79G5F;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Starter Project/Info.plist";
+				INFOPLIST_FILE = AlbumListAPP/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

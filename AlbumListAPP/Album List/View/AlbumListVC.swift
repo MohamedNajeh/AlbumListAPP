@@ -10,7 +10,9 @@ import UIKit
 class AlbumListVC: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
+    let viewModel = AlbumListViewModel()
     override func viewDidLoad() {
         super.viewDidLoad()
+        viewModel.getThumbNails()
     }
 }

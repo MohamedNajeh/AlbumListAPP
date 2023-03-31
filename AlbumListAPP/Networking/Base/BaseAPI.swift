@@ -35,7 +35,7 @@ class BaseAPI<T: TargetType> {
                 let resultData = try decoder.decode(B.self, from: data)
                 completion(.success(resultData))
             }catch{
-                print(error.localizedDescription)
+                print(error)
                 completion(.failure(.invalidDataAfterDecoding))
             }
         }
