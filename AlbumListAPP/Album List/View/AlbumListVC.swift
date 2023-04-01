@@ -8,7 +8,8 @@
 import UIKit
 
 class AlbumListVC: UIViewController {
-
+    
+    @IBOutlet weak var loafingIndicator: UIActivityIndicatorView!
     @IBOutlet weak var tableView: UITableView!
     let viewModel  = AlbumListViewModel()
     var thumbNails:Image?
@@ -22,6 +23,17 @@ class AlbumListVC: UIViewController {
     }
     
     func bindData(){
+        viewModel.isLoading.bind { [weak self] isLodaing in
+            switch isLodaing {
+            case true:
+                self?.loafingIndicator.startAnimating()
+            case false:
+                DispatchQueue.main.async {
+                    self?.loafingIndicator.stopAnimating()
+                }
+            }
+        }
+        
         viewModel.thumbNails.bind { [weak self] thumnails in
             guard let thumnails = thumnails else { return }
             self?.thumbNails = thumnails
@@ -49,6 +61,13 @@ extension AlbumListVC:UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        150
+        200
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "FullScreenVC") as! FullScreenImageVC
+        vc.imagePath = thumbNails?[indexPath.row].urls?.full ?? ""
+        
+        present(vc, animated: true)
     }
 }

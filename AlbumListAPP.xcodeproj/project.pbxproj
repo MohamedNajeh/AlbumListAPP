@@ -24,6 +24,7 @@
 		52EBB45A29D7244A0077A682 /* AlbumListAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EBB45929D7244A0077A682 /* AlbumListAPI.swift */; };
 		52EBB45E29D7253D0077A682 /* MVVMObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EBB45D29D7253D0077A682 /* MVVMObservable.swift */; };
 		52EBB46029D725530077A682 /* AlbumListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EBB45F29D725530077A682 /* AlbumListViewModel.swift */; };
+		52EBB46A29D81A940077A682 /* FullScreenImageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EBB46929D81A940077A682 /* FullScreenImageVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		52EBB45D29D7253D0077A682 /* MVVMObservable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMObservable.swift; sourceTree = "<group>"; };
 		52EBB45F29D725530077A682 /* AlbumListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumListViewModel.swift; sourceTree = "<group>"; };
 		52EBB46629D72CE90077A682 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52EBB46929D81A940077A682 /* FullScreenImageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenImageVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 		02948DEC29CFC76D00F82F28 /* AlbumListAPP */ = {
 			isa = PBXGroup;
 			children = (
+				52EBB46829D81A740077A682 /* FullScreenImage */,
 				52EBB45C29D725260077A682 /* MVVMObsevable */,
 				52EBB45529D7203E0077A682 /* AppDelegate */,
 				52EBB45229D720130077A682 /* Extensions */,
@@ -172,6 +175,14 @@
 			path = MVVMObsevable;
 			sourceTree = "<group>";
 		};
+		52EBB46829D81A740077A682 /* FullScreenImage */ = {
+			isa = PBXGroup;
+			children = (
+				52EBB46929D81A940077A682 /* FullScreenImageVC.swift */,
+			);
+			path = FullScreenImage;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -247,6 +258,7 @@
 				52EBB44929D71E380077A682 /* TargetType.swift in Sources */,
 				52EBB44829D71E380077A682 /* Constants.swift in Sources */,
 				52EBB44D29D71F520077A682 /* AlbumListVC.swift in Sources */,
+				52EBB46A29D81A940077A682 /* FullScreenImageVC.swift in Sources */,
 				52EBB46029D725530077A682 /* AlbumListViewModel.swift in Sources */,
 				52EBB44229D651010077A682 /* AlbumModel.swift in Sources */,
 				02948DEE29CFC76D00F82F28 /* AppDelegate.swift in Sources */,
