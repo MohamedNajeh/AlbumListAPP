@@ -19,6 +19,9 @@ class AlbumListCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
     }
     
+    func configureCell(image:String) {
+        self.imageOutlet.downloadImg(from: image)
+    }
     
     
 }
